@@ -25,7 +25,7 @@ export const roleAdmin = (req: Request, res: Response, next: NextFunction) => {
         message: 'Forbidden',
         error: {
             statusCode: 403,
-            details: ['Forbidden', 'Insufficient access']
+            details: ['Forbidden', 'Only admin can access']
         }
     })
     next();

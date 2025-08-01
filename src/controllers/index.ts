@@ -43,14 +43,13 @@ export const login = async (req: Request, res: Response) => {
             email: userResponse.email
         };
         const jwtSecret = process.env.JWT_SECRET || 'jwt-secret';
-        const accessToken = jwt.sign(payload, jwtSecret, { expiresIn: '1m' });
+        const accessToken = jwt.sign(payload, jwtSecret, { expiresIn: 60000 * 60 });
         req.session.accessToken = accessToken;
         return res.status(200).send({
             success: true,
             message: 'Login successful',
             data: {
                 statusCode: 200,
-                accessToken,
                 data: userResponse,
             }
         });

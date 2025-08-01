@@ -1,5 +1,10 @@
 import { validationResult, ValidationChain } from 'express-validator';
-import { loginValidation, registerValidation } from '../utils/validations';
+import { 
+    loginValidation, 
+    registerValidation,
+    createProductValidation,    
+    updateProductValidation
+} from '../utils/validations';
 import { Request, Response, NextFunction } from 'express';
 
 const validate = (schemas: ValidationChain[]) => {
@@ -24,3 +29,5 @@ const validate = (schemas: ValidationChain[]) => {
 
 export const loginValidate = validate(loginValidation);
 export const registerValidate = validate(registerValidation);
+export const createProductValidate = validate(createProductValidation);
+export const updateProductValidate = validate(updateProductValidation);

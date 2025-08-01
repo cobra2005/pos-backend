@@ -1,0 +1,142 @@
+[
+  {
+    "name": "CPU Intel Core i9-13900K",
+    "sku": "CPU-INTEL-I9-13900K",
+    "price": 14999000,
+    "stock": 20,
+    "unit": "cái"
+  },
+  {
+    "name": "Mainboard ASUS ROG STRIX Z790-E",
+    "sku": "MB-ASUS-Z790E",
+    "price": 8990000,
+    "stock": 15,
+    "unit": "cái"
+  },
+  {
+    "name": "RAM Corsair Vengeance 32GB DDR5",
+    "sku": "RAM-CORSAIR-32GB-DDR5",
+    "price": 2990000,
+    "stock": 50,
+    "unit": "thanh"
+  },
+  {
+    "name": "Ổ cứng SSD Samsung 980 Pro 1TB",
+    "sku": "SSD-SAMSUNG-980PRO-1TB",
+    "price": 2890000,
+    "stock": 30,
+    "unit": "cái"
+  },
+  {
+    "name": "HDD Seagate Barracuda 2TB",
+    "sku": "HDD-SEAGATE-2TB",
+    "price": 1390000,
+    "stock": 40,
+    "unit": "cái"
+  },
+  {
+    "name": "Card màn hình NVIDIA RTX 4070 Ti",
+    "sku": "GPU-NVIDIA-RTX4070TI",
+    "price": 19990000,
+    "stock": 10,
+    "unit": "cái"
+  },
+  {
+    "name": "Nguồn Corsair RM850x 850W",
+    "sku": "PSU-CORSAIR-RM850X",
+    "price": 2990000,
+    "stock": 25,
+    "unit": "cái"
+  },
+  {
+    "name": "Tản nhiệt nước NZXT Kraken X73",
+    "sku": "COOLER-NZXT-KRAKEN-X73",
+    "price": 3990000,
+    "stock": 12,
+    "unit": "cái"
+  },
+  {
+    "name": "Vỏ case Lian Li PC-O11 Dynamic",
+    "sku": "CASE-LIANLI-PCO11",
+    "price": 2790000,
+    "stock": 18,
+    "unit": "cái"
+  },
+  {
+    "name": "Màn hình ASUS TUF Gaming 27'' 165Hz",
+    "sku": "MON-ASUS-TUF-27",
+    "price": 4990000,
+    "stock": 22,
+    "unit": "cái"
+  },
+  {
+    "name": "Bàn phím cơ Logitech G Pro X",
+    "sku": "KB-LOGITECH-GPROX",
+    "price": 2590000,
+    "stock": 35,
+    "unit": "cái"
+  },
+  {
+    "name": "Chuột Logitech G502 Hero",
+    "sku": "MOUSE-LOGITECH-G502",
+    "price": 1290000,
+    "stock": 40,
+    "unit": "cái"
+  },
+  {
+    "name": "Router WiFi ASUS RT-AX88U",
+    "sku": "ROUTER-ASUS-AX88U",
+    "price": 5990000,
+    "stock": 10,
+    "unit": "cái"
+  },
+  {
+    "name": "Webcam Logitech C920",
+    "sku": "WEBCAM-LOGI-C920",
+    "price": 1590000,
+    "stock": 28,
+    "unit": "cái"
+  },
+  {
+    "name": "Ổ đĩa DVD LG GH24NSD1",
+    "sku": "DVD-LG-GH24NSD1",
+    "price": 450000,
+    "stock": 15,
+    "unit": "cái"
+  },
+  {
+    "name": "Card âm thanh Creative Sound BlasterX AE-5",
+    "sku": "SOUND-CREATIVE-AE5",
+    "price": 2990000,
+    "stock": 8,
+    "unit": "cái"
+  },
+  {
+    "name": "Đế tản nhiệt laptop Cooler Master Notepal X3",
+    "sku": "LAPCOOL-CM-NOTEPALX3",
+    "price": 790000,
+    "stock": 20,
+    "unit": "cái"
+  },
+  {
+    "name": "Đèn LED RGB NZXT Hue 2",
+    "sku": "RGB-NZXT-HUE2",
+    "price": 990000,
+    "stock": 25,
+    "unit": "bộ"
+  },
+  {
+    "name": "Hub USB ORICO 4 cổng USB 3.0",
+    "sku": "HUB-ORICO-4USB3",
+    "price": 490000,
+    "stock": 30,
+    "unit": "cái"
+  },
+  {
+    "name": "Keo tản nhiệt Arctic MX-6",
+    "sku": "PASTE-ARCTIC-MX6",
+    "price": 250000,
+    "stock": 50,
+    "unit": "tuýp"
+  }
+]
