@@ -1,11 +1,8 @@
-import { validationResult, ValidationChain } from 'express-validator';
-import { 
-    loginValidation, 
-    registerValidation,
-    createProductValidation,    
-    updateProductValidation
-} from '../utils/validations';
 import { Request, Response, NextFunction } from 'express';
+import { validationResult, ValidationChain } from 'express-validator';
+import { loginValidation, registerValidation } from '../validations/authValidations';
+import { createProductValidation, updateProductValidation } from '../validations/productValidations';
+import { createOrderValidation } from '../validations/orderValidations';
 
 const validate = (schemas: ValidationChain[]) => {
     return async (req: Request, res: Response, next: NextFunction) => {
@@ -29,5 +26,10 @@ const validate = (schemas: ValidationChain[]) => {
 
 export const loginValidate = validate(loginValidation);
 export const registerValidate = validate(registerValidation);
+
+// Product validations
 export const createProductValidate = validate(createProductValidation);
 export const updateProductValidate = validate(updateProductValidation);
+
+// Order validations
+export const createOrderValidate = validate(createOrderValidation)

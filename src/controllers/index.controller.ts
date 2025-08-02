@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { matchedData } from 'express-validator';
 import User from '../models/User';
-import { hashPassword, comparePassword } from '../utils/hash';
+import { hashPassword, comparePassword } from '../utils/handlePassword';
 import jwt from 'jsonwebtoken';
 import 'dotenv/config';
 

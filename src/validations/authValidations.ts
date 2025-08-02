@@ -28,36 +28,3 @@ export const registerValidation = [
         .isString().withMessage('password must be a string!')
         .isLength({ min: 4, max: 15 }).withMessage('password can only be 4-15 characters!'),
 ];
-
-export const createProductValidation = [
-    body('name')
-        .notEmpty().withMessage('name must not be empty!')
-        .isString().withMessage('name must be a string!'),
-    body('sku')
-        .notEmpty().withMessage('sku must not be empty!')
-        .isString().withMessage('sku must be a string!'),
-    body('price')
-        .notEmpty().withMessage('price must not be empty!')
-        .isNumeric().withMessage('price must be a number!'),
-    body('stock')
-        .notEmpty().withMessage('stock must not be empty!')
-        .isInt().withMessage('stock must be an integer!'),
-    body('unit')
-        .notEmpty().withMessage('unit must not be empty!')
-        .isString().withMessage('unit must be a string!')
-];
-
-export const updateProductValidation = [
-    body('name')
-        .notEmpty().withMessage('name must not be empty!')
-        .isString().withMessage('name must be a string!'),
-    body('price')
-        .notEmpty().withMessage('price must not be empty!')
-        .isNumeric().withMessage('price must be a number!'),
-    body('stock')
-        .notEmpty().withMessage('stock must not be empty!')
-        .isInt().withMessage('stock must be an integer!'),
-    body('unit')
-        .notEmpty().withMessage('unit must not be empty!')
-        .isString().withMessage('unit must be a string!')
-]
