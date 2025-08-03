@@ -21,7 +21,7 @@ const createOrder = async (req: Request, res: Response) => {
         }
 
         const findUser = await User.findById(createdBy);
-        if(!findUser) {
+        if (!findUser) {
             return res.status(404).send({
                 success: false,
                 message: 'User not found',
@@ -53,10 +53,25 @@ const createOrder = async (req: Request, res: Response) => {
         for (const item of items) {
             const product = products.find(p => p._id.toString() === item.productId);
             if (!product) {
-                throw new Error(`Không tìm thấy sản phẩm: ${item.productId}`);
+                return res.status(404).send({
+                    success: false,
+                    message: `Product not found: ${item.productId}`,
+                    error: {
+                        statusCode: 404,
+                        details: [`Product not found: ${item.productId}`]
+                    }
+                });
             }
             if (product.stock < item.quantity) {
-                throw new Error(`Sản phẩm "${product.name}" không đủ hàng (${product.stock} còn lại)`);
+                return res.status(403).send({
+                    success: false,
+                    message: `Product "${product.name}" is out of stock (${product.stock} remaining)`,
+                    error: {
+                        statusCode: 403,
+                        details: [`Product "${product.name}" is out of stock (${product.stock} remaining)`]
+                    }
+                });
+                // throw new Error(`Product "${product.name}" is out of stock (${product.stock} remaining)`);
             }
             const itemTotal = product.price * item.quantity;
             totalPrice += itemTotal;

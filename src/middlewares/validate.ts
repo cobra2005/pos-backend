@@ -3,6 +3,7 @@ import { validationResult, ValidationChain } from 'express-validator';
 import { loginValidation, registerValidation } from '../validations/authValidations';
 import { createProductValidation, updateProductValidation } from '../validations/productValidations';
 import { createOrderValidation } from '../validations/orderValidations';
+import { importStockValidation, exportStockValidation } from '../validations/stockValidations';
 
 const validate = (schemas: ValidationChain[]) => {
     return async (req: Request, res: Response, next: NextFunction) => {
@@ -32,4 +33,8 @@ export const createProductValidate = validate(createProductValidation);
 export const updateProductValidate = validate(updateProductValidation);
 
 // Order validations
-export const createOrderValidate = validate(createOrderValidation)
+export const createOrderValidate = validate(createOrderValidation);
+
+// Stock validations
+export const importStockValidate = validate(importStockValidation);
+export const exportStockValidate = validate(exportStockValidation);

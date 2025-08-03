@@ -34,3 +34,10 @@ export interface IOrder extends Document {
   createdBy: string;
   createdAt: Date;
 }
+
+export interface IStockHistory extends Document {
+  productId: string,
+  type: 'import' | 'export',
+  quantity: number,
+  createdAt: Date
+}
